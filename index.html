@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tiandra Taylor - Portfolio</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        header {
+            background: white;
+            border-radius: 15px;
+            padding: 40px;
+            margin-bottom: 30px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+
+        .profile-section {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 30px;
+            flex-wrap: wrap;
+        }
+
+        .profile-info h1 {
+            font-size: 2.5em;
+            color: #2c3e50;
+            margin-bottom: 10px;
+        }
+
+        .profile-info .subtitle {
+            font-size: 1.2em;
+            color: #7f8c8d;
+            margin-bottom: 20px;
+        }
+
+        .contact-info {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        .contact-info a {
+            color: #667eea;
+            text-decoration: none;
+            padding: 8px 16px;
+            border: 2px solid #667eea;
+            border-radius: 25px;
+            transition: all 0.3s ease;
+        }
+
+        .contact-info a:hover {
+            background: #667eea;
+            color: white;
+        }
+
+        .main-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 30px;
+        }
+
+        .section {
+            background: white;
+            border-radius: 15px;
+            padding: 30px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            margin-bottom: 30px;
+        }
+
+        .section h2 {
+            color: #2c3e50;
+            font-size: 1.8em;
+            margin-bottom: 20px;
+            position: relative;
+            padding-bottom: 10px;
+        }
+
+        .section h2::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 50px;
+            height: 3px;
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            border-radius: 2px;
+        }
+
+        .about-text {
+            font-size: 1.1em;
+            color: #555;
+            line-height: 1.8;
+        }
+
+        .education-item, .experience-item {
+            margin-bottom: 25px;
+            padding-bottom: 20px;
+            border-bottom: 1px solid #eee;
+        }
+
+        .education-item:last-child, .experience-item:last-child {
+            border-bottom: none;
+            margin-bottom: 0;
+        }
+
+        .item-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-bottom: 10px;
+            flex-wrap: wrap;
+        }
+
+        .item-title {
+            font-weight: 600;
+            color: #2c3e50;
+            font-size: 1.1em;
+        }
+
+        .item-company {
+            color: #667eea;
+            font-weight: 500;
+        }
+
+        .item-date {
+            color: #7f8c8d;
+            font-size: 0.9em;
+        }
+
+        .item-details {
+            color: #555;
+            margin-top: 8px;
+        }
+
+        .item-details ul {
+            margin-left: 20px;
+            margin-top: 10px;
+        }
+
+        .item-details li {
+            margin-bottom: 5px;
+        }
+
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+        }
+
+        .skill-category {
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 10px;
+            border-left: 4px solid #667eea;
+        }
+
+        .skill-category h3 {
+            color: #2c3e50;
+            margin-bottom: 15px;
+            font-size: 1.1em;
+        }
+
+        .skill-list {
+            list-style: none;
+        }
+
+        .skill-list li {
+            padding: 5px 0;
+            color: #555;
+            position: relative;
+            padding-left: 15px;
+        }
+
+        .skill-list li::before {
+            content: '▸';
+            position: absolute;
+            left: 0;
+            color: #667eea;
+        }
+
+        .full-width {
+            grid-column: 1 / -1;
+        }
+
+        .projects-grid {
+            display: grid;
+            gap: 20px;
+        }
+
+        .project-item {
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 10px;
+            border-left: 4px solid #764ba2;
+        }
+
+        .project-title {
+            color: #2c3e50;
+            font-size: 1.2em;
+            font-weight: 600;
+            margin-bottom: 10px;
+        }
+
+        .project-details {
+            color: #555;
+            line-height: 1.6;
+        }
+
+        .gpa-highlight {
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            color: white;
+            padding: 4px 10px;
+            border-radius: 15px;
+            font-size: 0.9em;
+            margin-left: 10px;
+        }
+
+        @media (max-width: 768px) {
+            .main-content {
+                grid-template-columns: 1fr;
+            }
+            
+            .profile-section {
+                flex-direction: column;
+                text-align: center;
+            }
+            
+            .contact-info {
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            .item-header {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+            
+            .skills-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="profile-section">
+                <div class="profile-info">
+                    <h1>Tiandra Taylor</h1>
+                    <p class="subtitle">MIS Master's Student & Senior Technical Support Engineer</p>
+                    <div class="contact-info">
+                        <a href="https://linkedin.com/in/TiandraTaylor36" target="_blank">💼 LinkedIn</a>
+                        <a href="https://github.com/TiandraTaylor36" target="_blank">💻 GitHub</a>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <div class="main-content">
+            <div class="section">
+                <h2>About Me</h2>
+                <p class="about-text">
+                    I'm currently pursuing a Master of Management Information Systems at Utah State University while working as a Senior Technical Support Engineer at Entrata. My passion lies in problem-solving and data analytics to support strategic decision-making in our increasingly data-driven world. I thrive on identifying trends, patterns, and anomalies to extract actionable insights, and I'm always eager to learn new technologies and tackle challenging problems.
+                </p>
+            </div>
+
+            <div class="section">
+                <h2>Education</h2>
+                <div class="education-item">
+                    <div class="item-header">
+                        <div>
+                            <div class="item-title">Master of Management Information Systems</div>
+                            <div class="item-company">Utah State University, Jon M. Huntsman School of Business</div>
+                        </div>
+                        <div class="item-date">Present</div>
+                    </div>
+                    <div class="item-details">
+                        <span class="gpa-highlight">GPA: 4.0</span> while working part time / full time
+                        <br>• Analytic Solution Center Member, Association for Information Systems Member
+                    </div>
+                </div>
+                <div class="education-item">
+                    <div class="item-header">
+                        <div>
+                            <div class="item-title">Bachelor of Science in Human Experience Design and Interaction</div>
+                            <div class="item-company">Utah State University, Emma Eccles Jones College</div>
+                        </div>
+                        <div class="item-date">Dec 2023</div>
+                    </div>
+                    <div class="item-details">
+                        <span class="gpa-highlight">GPA: 3.89</span> while working full time
+                        <br>• Undergraduate Teaching Fellow Award, Department of Instructional Technology & Learning Sciences
+                    </div>
+                </div>
+            </div>
+
+            <div class="section">
+                <h2>Experience</h2>
+                <div class="experience-item">
+                    <div class="item-header">
+                        <div>
+                            <div class="item-title">Senior Technical Support Engineer</div>
+                            <div class="item-company">Entrata</div>
+                        </div>
+                        <div class="item-date">Apr 2024 – Present</div>
+                    </div>
+                    <div class="item-details">
+                        <ul>
+                            <li>Develop backend database solutions and implement API integrations between multiple property management platforms</li>
+                            <li>Serve as technical intermediary for all stakeholders, performing advanced SQL and code-based troubleshooting</li>
+                            <li>Bridge gap between clients and development team by implementing direct fixes or creating detailed JIRA tickets</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="experience-item">
+                    <div class="item-header">
+                        <div>
+                            <div class="item-title">Graduate Teaching Fellow</div>
+                            <div class="item-company">Utah State University</div>
+                        </div>
+                        <div class="item-date">Jan 2025 – May 2025</div>
+                    </div>
+                    <div class="item-details">
+                        <ul>
+                            <li>Support professor with course delivery, student assessment, and classroom management</li>
+                            <li>Facilitate student learning through one-on-one coaching and group discussions</li>
+                            <li>Maintain records and assist with grading and feedback processes</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="experience-item">
+                    <div class="item-header">
+                        <div>
+                            <div class="item-title">InterU – AI Conversation Simulation Platform</div>
+                            <div class="item-company">Research Project with Analytic Solution Center</div>
+                        </div>
+                        <div class="item-date">Aug 2024 – Present</div>
+                    </div>
+                    <div class="item-details">
+                        <ul>
+                            <li>Lead front-end development for conversation simulation platform</li>
+                            <li>Ensure seamless user flow and proper connectivity between front-end interfaces for the back-end system connections</li>
+                            <li>Implement technical solutions to facilitate realistic AI-powered communication practice environments</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="section full-width">
+                <h2>Technical Skills</h2>
+                <div class="skills-grid">
+                    <div class="skill-category">
+                        <h3>Advanced Skills</h3>
+                        <ul class="skill-list">
+                            <li>Application Development</li>
+                            <li>Web Production and Application</li>
+                            <li>Multimedia Technology</li>
+                        </ul>
+                    </div>
+                    <div class="skill-category">
+                        <h3>Intermediate Skills</h3>
+                        <ul class="skill-list">
+                            <li>SQL, PostgreSQL, MySQL</li>
+                            <li>Machine Learning</li>
+                            <li>Artificial Intelligence</li>
+                            <li>Python & Python Libraries</li>
+                            <li>Data Analysis</li>
+                            <li>Adobe Creative Cloud</li>
+                            <li>Cloud Services</li>
+                        </ul>
+                    </div>
+                    <div class="skill-category">
+                        <h3>Beginner Skills</h3>
+                        <ul class="skill-list">
+                            <li>HTML, CSS</li>
+                            <li>Deep Learning for AI</li>
+                            <li>Tableau</li>
+                            <li>Database Management</li>
+                            <li>GitHub</li>
+                            <li>Microsoft Office Suite</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="section full-width">
+                <h2>GitHub Projects</h2>
+                <div class="projects-grid">
+                    <div class="project-item">
+                        <div class="project-title">Coming Soon!</div>
+                        <div class="project-details">
+                            Projects will be added here as they are completed throughout my MIS program. Check back soon to see my latest work!
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="section full-width">
+                <h2>Featured Project</h2>
+                <div class="projects-grid">
+                    <div class="project-item">
+                        <div class="project-title">Hack4Good Hackathon - Microsoft (2nd Place Winner)</div>
+                        <div class="project-details">
+                            Won second place among 10+ competing teams by developing a RAG pipeline for the Elizabeth Glaser Pediatric AIDS Foundation. Built system to ingest, clean, organize, and store billions of data instances for access through a chatbot interface that also can create data visualization. Created solution enabling field workers across 16 African countries to retrieve critical statistics for HIV elimination.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
