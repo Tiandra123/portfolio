@@ -1,25 +1,31 @@
 # Advanced Python Class Assignments
 
-## Blackjack Game
+## Projects
 
+### 1. Blackjack Game
 A command-line Blackjack implementation with user input handling, card dealing logic, and basic house play rules.
 
-### Features
+**Features:**
 - User input handling for hit/stay decisions
 - Card dealing and score tracking
 - House play rules (house hits when score ≤ 17)
 - Bust detection and win/loss evaluation
 - Game restart functionality
 
-### Technologies Used
+### 2. COVID-19 Data Analysis Tool
+A comprehensive data analysis tool that retrieves and processes COVID-19 statistics for all US states and territories.
+
+**Features:**
+- REST API integration with COVID Tracking Project
+- Data processing for all 50 states + territories
+- Statistical analysis (averages, peaks, trends)
+- Date formatting and data validation
+- Monthly/yearly trend analysis
+- JSON output file generation per state
+
+**Technologies Used:**
 - Python
-- Object-Oriented Programming
+- REST APIs & JSON processing
+- NumPy for statistical calculations
+- Data analysis and visualization
 - AWS EC2 for development environment
-- VS Code for editing
-
-### Note
-This project uses a `DeckOfCards.py` class provided by the instructor. This is not included in this folder as I did not personally code it.
-
-### How to Run
-1. Ensure you have the `DeckOfCards.py` file in the same directory
-2. Run: `python blackjack.py`
