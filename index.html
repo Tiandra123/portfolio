@@ -34,34 +34,26 @@
             text-align: center;
         }
 
-        .profile-section {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            gap: 30px;
-            flex-wrap: wrap;
-        }
-
-        .profile-info h1 {
+        header h1 {
             font-size: 2.5em;
             color: #2c3e50;
             margin-bottom: 10px;
         }
 
-        .profile-info .subtitle {
+        header .subtitle {
             font-size: 1.2em;
             color: #7f8c8d;
             margin-bottom: 20px;
         }
 
-        .contact-info {
+        .contact-links {
             display: flex;
             justify-content: center;
             gap: 20px;
             flex-wrap: wrap;
         }
 
-        .contact-info a {
+        .contact-links a {
             color: #667eea;
             text-decoration: none;
             padding: 8px 16px;
@@ -70,18 +62,112 @@
             transition: all 0.3s ease;
         }
 
-        .contact-info a:hover {
+        .contact-links a:hover {
             background: #667eea;
             color: white;
         }
 
-        .main-content {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
+        .row {
+            display: flex;
             gap: 30px;
+            margin-bottom: 30px;
         }
 
-        .section {
+        .box {
+            background: white;
+            border-radius: 15px;
+            padding: 30px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            width: 50%;
+        }
+
+        .box h2 {
+            color: #2c3e50;
+            font-size: 1.8em;
+            margin-bottom: 20px;
+            border-bottom: 3px solid #667eea;
+            padding-bottom: 10px;
+            display: inline-block;
+        }
+
+        .gpa {
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            color: white;
+            padding: 4px 10px;
+            border-radius: 15px;
+            font-size: 0.9em;
+        }
+
+        .job, .education {
+            margin-bottom: 25px;
+            padding-bottom: 20px;
+            border-bottom: 1px solid #eee;
+        }
+
+        .job:last-child, .education:last-child {
+            border-bottom: none;
+            margin-bottom: 0;
+        }
+
+        .job-title, .degree {
+            font-weight: 600;
+            color: #2c3e50;
+            font-size: 1.1em;
+        }
+
+        .company, .school {
+            color: #667eea;
+            font-weight: 500;
+        }
+
+        .date {
+            color: #7f8c8d;
+            font-size: 0.9em;
+            float: right;
+        }
+
+        .skills {
+            margin-bottom: 20px;
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 10px;
+            border-left: 4px solid #667eea;
+        }
+
+        .skills h3 {
+            color: #2c3e50;
+            margin-bottom: 15px;
+        }
+
+        .skills ul {
+            list-style: none;
+        }
+
+        .skills li {
+            padding: 5px 0;
+            color: #555;
+            position: relative;
+            padding-left: 15px;
+        }
+
+        .skills li::before {
+            content: '▸';
+            position: absolute;
+            left: 0;
+            color: #667eea;
+        }
+
+        .section-header {
+            color: #667eea;
+            margin: 30px 0 20px 0;
+            font-size: 1.3em;
+        }
+
+        .section-header:first-child {
+            margin-top: 0;
+        }
+
+        .full-width {
             background: white;
             border-radius: 15px;
             padding: 30px;
@@ -89,127 +175,12 @@
             margin-bottom: 30px;
         }
 
-        .section h2 {
-            color: #2c3e50;
-            font-size: 1.8em;
-            margin-bottom: 20px;
-            position: relative;
-            padding-bottom: 10px;
-        }
-
-        .section h2::after {
-            content: '';
-            position: absolute;
-            bottom: 0;
-            left: 0;
-            width: 50px;
-            height: 3px;
-            background: linear-gradient(135deg, #667eea, #764ba2);
-            border-radius: 2px;
-        }
-
-        .about-text {
-            font-size: 1.1em;
-            color: #555;
-            line-height: 1.8;
-        }
-
-        .education-item, .experience-item {
-            margin-bottom: 25px;
-            padding-bottom: 20px;
-            border-bottom: 1px solid #eee;
-        }
-
-        .education-item:last-child, .experience-item:last-child {
-            border-bottom: none;
-            margin-bottom: 0;
-        }
-
-        .item-header {
-            display: flex;
-            justify-content: space-between;
-            align-items: flex-start;
-            margin-bottom: 10px;
-            flex-wrap: wrap;
-        }
-
-        .item-title {
-            font-weight: 600;
-            color: #2c3e50;
-            font-size: 1.1em;
-        }
-
-        .item-company {
-            color: #667eea;
-            font-weight: 500;
-        }
-
-        .item-date {
-            color: #7f8c8d;
-            font-size: 0.9em;
-        }
-
-        .item-details {
-            color: #555;
-            margin-top: 8px;
-        }
-
-        .item-details ul {
-            margin-left: 20px;
-            margin-top: 10px;
-        }
-
-        .item-details li {
-            margin-bottom: 5px;
-        }
-
-        .skills-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-            gap: 20px;
-        }
-
-        .skill-category {
-            background: #f8f9fa;
-            padding: 20px;
-            border-radius: 10px;
-            border-left: 4px solid #667eea;
-        }
-
-        .skill-category h3 {
-            color: #2c3e50;
-            margin-bottom: 15px;
-            font-size: 1.1em;
-        }
-
-        .skill-list {
-            list-style: none;
-        }
-
-        .skill-list li {
-            padding: 5px 0;
-            color: #555;
-            position: relative;
-            padding-left: 15px;
-        }
-
-        .skill-list li::before {
-            content: '▸';
-            position: absolute;
-            left: 0;
-            color: #667eea;
-        }
-
-        .full-width {
-            grid-column: 1 / -1;
-        }
-
-        .projects-grid {
+        .projects {
             display: grid;
             gap: 20px;
         }
 
-        .project-item {
+        .project {
             background: #f8f9fa;
             padding: 20px;
             border-radius: 10px;
@@ -223,53 +194,18 @@
             margin-bottom: 10px;
         }
 
-        .project-details {
-            color: #555;
-            line-height: 1.6;
-        }
-
-        .gpa-highlight {
-            background: linear-gradient(135deg, #667eea, #764ba2);
-            color: white;
-            padding: 4px 10px;
-            border-radius: 15px;
-            font-size: 0.9em;
-            margin-left: 10px;
-        }
-
-        .experience-subcategory {
-            color: #667eea;
-            margin-bottom: 20px;
-            margin-top: 30px;
-            font-size: 1.3em;
-        }
-
-        .experience-subcategory:first-child {
-            margin-top: 0;
-        }
-
         @media (max-width: 768px) {
-            .main-content {
-                grid-template-columns: 1fr;
-            }
-            
-            .profile-section {
+            .row {
                 flex-direction: column;
-                text-align: center;
             }
             
-            .contact-info {
+            .box {
+                width: 100%;
+            }
+            
+            .contact-links {
                 flex-direction: column;
                 align-items: center;
-            }
-            
-            .item-header {
-                flex-direction: column;
-                align-items: flex-start;
-            }
-            
-            .skills-grid {
-                grid-template-columns: 1fr;
             }
         }
     </style>
@@ -277,71 +213,53 @@
 <body>
     <div class="container">
         <header>
-            <div class="profile-section">
-                <div class="profile-info">
-                    <h1>Tiandra Taylor</h1>
-                    <p class="subtitle">MIS Master's Student & Senior Technical Support Engineer</p>
-                    <div class="contact-info">
-                        <a href="https://linkedin.com/in/TiandraTaylor36" target="_blank">💼 LinkedIn</a>
-                        <a href="https://github.com/Tiandra123" target="_blank">💻 GitHub</a>
-                    </div>
-                </div>
+            <h1>Tiandra Taylor</h1>
+            <p class="subtitle">MIS Master's Student & Senior Technical Support Engineer</p>
+            <div class="contact-links">
+                <a href="https://linkedin.com/in/tiandrataylor36" target="_blank">💼 LinkedIn</a>
+                <a href="https://github.com/Tiandra123" target="_blank">💻 GitHub</a>
             </div>
         </header>
 
-        <div class="main-content">
-            <div class="section">
+        <div class="row">
+            <div class="box">
                 <h2>About Me</h2>
-                <p class="about-text">
-                    I'm a Master's student at Utah State University studying Management Information Systems while working full-time as a Senior Technical Support Engineer at Entrata. I love diving into data to uncover insights that help solve real problems - there's something satisfying about finding patterns that others might miss. I'm constantly learning new technologies and enjoy the challenge of tackling complex problems. Outside of work and school, I spend my time skiing, paddleboarding, and traveling to new places whenever I get the chance.
-                </p>
+                <p>I'm a Master's student at Utah State University studying Management Information Systems while working full-time as a Senior Technical Support Engineer at Entrata. I love diving into data to uncover insights that help solve real problems - there's something satisfying about finding patterns that others might miss. I'm constantly learning new technologies and enjoy the challenge of tackling complex problems. Outside of work and school, I spend my time skiing, paddleboarding, and traveling to new places whenever I get the chance.</p>
             </div>
 
-            <div class="section">
+            <div class="box">
                 <h2>Education</h2>
-                <div class="education-item">
-                    <div class="item-header">
-                        <div>
-                            <div class="item-title">Master of Management Information Systems</div>
-                            <div class="item-company">Utah State University, Jon M. Huntsman School of Business</div>
-                        </div>
-                        <div class="item-date">Present</div>
-                    </div>
-                    <div class="item-details">
-                        <span class="gpa-highlight">GPA: 4.0</span> while working part time / full time
-                        <br>• Analytic Solution Center Member, Association for Information Systems Member
-                    </div>
+                <div class="education">
+                    <div class="degree">Master of Management Information Systems</div>
+                    <div class="school">Utah State University, Jon M. Huntsman School of Business</div>
+                    <div class="date">Present</div>
+                    <p><span class="gpa">GPA: 4.0</span>  while working part time / full time<br>
+                    • Analytic Solution Center Member, Association for Information Systems Member</p>
                 </div>
-                <div class="education-item">
-                    <div class="item-header">
-                        <div>
-                            <div class="item-title">Bachelor of Science in Human Experience Design and Interaction</div>
-                            <div class="item-company">Utah State University, Emma Eccles Jones College</div>
-                        </div>
-                        <div class="item-date">Dec 2023</div>
-                    </div>
-                    <div class="item-details">
-                        <span class="gpa-highlight">GPA: 3.89</span> while working full time
-                        <br>• Undergraduate Teaching Fellow Award, Department of Instructional Technology & Learning Sciences
-                    </div>
+                <div class="education">
+                    <div class="degree">Bachelor of Science in Human Experience Design and Interaction</div>
+                    <div class="school">Utah State University, Emma Eccles Jones College</div>
+                    <div class="date">Dec 2023</div>
+                    <p><span class="gpa">GPA: 3.89</span>  while working full time<br>
+                    • Undergraduate Teaching Fellow Award, Department of Instructional Technology & Learning Sciences</p>
                 </div>
             </div>
         </div>
 
-        <div class="section full-width">
-            <h2>Technical Skills</h2>
-            <div class="skills-grid">
-                <div class="skill-category">
+        <div class="row">
+            <div class="box">
+                <h2>Technical Skills</h2>
+                <div class="skills">
                     <h3>Advanced Skills</h3>
-                    <ul class="skill-list">
+                    <ul>
                         <li>Application Development</li>
                         <li>Web Production and Application</li>
                         <li>Multimedia Technology</li>
                     </ul>
                 </div>
-                <div class="skill-category">
+                <div class="skills">
                     <h3>Intermediate Skills</h3>
-                    <ul class="skill-list">
+                    <ul>
                         <li>SQL, PostgreSQL, MySQL</li>
                         <li>Machine Learning</li>
                         <li>Artificial Intelligence</li>
@@ -351,9 +269,9 @@
                         <li>Cloud Services</li>
                     </ul>
                 </div>
-                <div class="skill-category">
+                <div class="skills">
                     <h3>Beginner Skills</h3>
-                    <ul class="skill-list">
+                    <ul>
                         <li>HTML, CSS</li>
                         <li>Deep Learning for AI</li>
                         <li>Tableau</li>
@@ -363,71 +281,51 @@
                     </ul>
                 </div>
             </div>
-        </div>
 
-        <div class="section full-width">
-            <h2>Experience</h2>
-            
-            <h3 class="experience-subcategory">Professional Experience</h3>
-            <div class="experience-item">
-                <div class="item-header">
-                    <div>
-                        <div class="item-title">Senior Technical Support Engineer</div>
-                        <div class="item-company">Entrata</div>
-                    </div>
-                    <div class="item-date">Apr 2024 – Present</div>
-                </div>
-                <div class="item-details">
+            <div class="box">
+                <h2>Experience</h2>
+                
+                <h3 class="section-header">Professional Experience</h3>
+                <div class="job">
+                    <div class="job-title">Senior Technical Support Engineer</div>
+                    <div class="company">Entrata</div>
+                    <div class="date">Apr 2024 – Present</div>
+                    <br>
                     <ul>
                         <li>Develop backend database solutions and implement API integrations between multiple property management platforms</li>
                         <li>Serve as technical intermediary for all stakeholders, performing advanced SQL and code-based troubleshooting</li>
                         <li>Bridge gap between clients and development team by implementing direct fixes or creating detailed JIRA tickets</li>
                     </ul>
                 </div>
-            </div>
-            <div class="experience-item">
-                <div class="item-header">
-                    <div>
-                        <div class="item-title">Graduate Teaching Fellow</div>
-                        <div class="item-company">Utah State University</div>
-                    </div>
-                    <div class="item-date">Jan 2025 – May 2025</div>
-                </div>
-                <div class="item-details">
+                <div class="job">
+                    <div class="job-title">Graduate Teaching Fellow</div>
+                    <div class="company">Utah State University</div>
+                    <div class="date">Jan 2025 – May 2025</div>
+                    <br>
                     <ul>
                         <li>Support professor with course delivery, student assessment, and classroom management</li>
                         <li>Facilitate student learning through one-on-one coaching and group discussions</li>
                         <li>Maintain records and assist with grading and feedback processes</li>
                     </ul>
                 </div>
-            </div>
 
-            <h3 class="experience-subcategory">Projects & Competitions</h3>
-            <div class="experience-item">
-                <div class="item-header">
-                    <div>
-                        <div class="item-title">Hack4Good Hackathon - Microsoft (2nd Place Winner)</div>
-                        <div class="item-company">Bellevue, WA</div>
-                    </div>
-                    <div class="item-date">Spring 2025</div>
-                </div>
-                <div class="item-details">
+                <h3 class="section-header">Projects & Competitions</h3>
+                <div class="job">
+                    <div class="job-title">Hack4Good Hackathon - Microsoft (2nd Place Winner)</div>
+                    <div class="company">Bellevue, WA</div>
+                    <div class="date">Spring 2025</div>
+                    <br>
                     <ul>
                         <li>Won second place among 10+ competing teams by developing a RAG pipeline for the Elizabeth Glaser Pediatric AIDS Foundation</li>
                         <li>Built system to ingest, clean, organize, and store billions of data instances for access through a chatbot interface</li>
                         <li>Created solution enabling field workers across 16 African countries to retrieve critical statistics for HIV elimination</li>
                     </ul>
                 </div>
-            </div>
-            <div class="experience-item">
-                <div class="item-header">
-                    <div>
-                        <div class="item-title">InterU – AI Conversation Simulation Platform</div>
-                        <div class="item-company">Research Project with Analytic Solution Center</div>
-                    </div>
-                    <div class="item-date">Aug 2024 – Present</div>
-                </div>
-                <div class="item-details">
+                <div class="job">
+                    <div class="job-title">InterU – AI Conversation Simulation Platform</div>
+                    <div class="company">Research Project with Analytic Solution Center</div>
+                    <div class="date">Aug 2024 – Present</div>
+                    <br>
                     <ul>
                         <li>Lead front-end development for conversation simulation platform</li>
                         <li>Ensure seamless user flow and proper connectivity between front-end interfaces for the back-end system connections</li>
@@ -437,35 +335,27 @@
             </div>
         </div>
 
-        <div class="section full-width">
+        <div class="full-width">
             <h2>GitHub Projects</h2>
-            <div class="projects-grid">
-                <div class="project-item">
+            <div class="projects">
+                <div class="project">
                     <div class="project-title"><a href="advanced-python-assignments/" style="color: #2c3e50; text-decoration: none;">Blackjack Game</a></div>
-                    <div class="project-details">
-                        <strong>Technologies:</strong> Python, Object-Oriented Programming, AWS EC2, VS Code<br>
-                        A command-line Blackjack game with user input handling, card dealing logic, and basic house play rules (house hits when score ≤ 17). Features include bust detection, score tracking, game restart functionality, and win/loss evaluation. Developed using provided DeckOfCards class and tested on AWS EC2 instance.
-                    </div>
+                    <p><strong>Technologies:</strong> Python, Object-Oriented Programming, AWS EC2, VS Code<br>
+                    A command-line Blackjack game with user input handling, card dealing logic, and basic house play rules (house hits when score ≤ 17). Features include bust detection, score tracking, game restart functionality, and win/loss evaluation. Developed using provided DeckOfCards class and tested on AWS EC2 instance.</p>
                 </div>
-                <div class="project-item">
+                <div class="project">
                     <div class="project-title"><a href="advanced-python-assignments/" style="color: #2c3e50; text-decoration: none;">COVID-19 Data Analysis Tool</a></div>
-                    <div class="project-details">
-                        <strong>Technologies:</strong> Python, REST APIs, JSON, NumPy, Data Analysis<br>
-                        A comprehensive data analysis tool that retrieves COVID-19 statistics from a REST API for all US states and territories. Processes and analyzes daily case data to identify trends, peak dates, and monthly/yearly patterns. Outputs formatted analysis reports and saves processed data as JSON files for each state.
-                    </div>
+                    <p><strong>Technologies:</strong> Python, REST APIs, JSON, NumPy, Data Analysis<br>
+                    A comprehensive data analysis tool that retrieves COVID-19 statistics from a REST API for all US states and territories. Processes and analyzes daily case data to identify trends, peak dates, and monthly/yearly patterns. Outputs formatted analysis reports and saves processed data as JSON files for each state.</p>
                 </div>
-                <div class="project-item">
+                <div class="project">
                     <div class="project-title"><a href="advanced-python-assignments/" style="color: #2c3e50; text-decoration: none;">Cryptocurrency Arbitrage Detector</a></div>
-                    <div class="project-details">
-                        <strong>Technologies:</strong> Python, NetworkX, Graph Theory, REST APIs, Financial Analysis<br>
-                        A network-based arbitrage detection system for cryptocurrency markets using graph theory algorithms. Retrieves real-time price data from CoinGecko API, constructs weighted directed graphs, and identifies profitable trading paths between different cryptocurrencies. Calculates potential gains/losses through multi-step currency exchanges.
-                    </div>
+                    <p><strong>Technologies:</strong> Python, NetworkX, Graph Theory, REST APIs, Financial Analysis<br>
+                    A network-based arbitrage detection system for cryptocurrency markets using graph theory algorithms. Retrieves real-time price data from CoinGecko API, constructs weighted directed graphs, and identifies profitable trading paths between different cryptocurrencies. Calculates potential gains/losses through multi-step currency exchanges.</p>
                 </div>
-                <div class="project-item">
+                <div class="project">
                     <div class="project-title">More Projects Coming Soon!</div>
-                    <div class="project-details">
-                        Additional projects will be added as they are completed throughout my MIS program. Check back soon!
-                    </div>
+                    <p>Additional projects will be added as they are completed throughout my MIS program. Check back soon!</p>
                 </div>
             </div>
         </div>
