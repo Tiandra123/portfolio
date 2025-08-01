@@ -15,25 +15,6 @@ I'm currently a Senior Technical Support Engineer at Entrata while completing my
 - **Development Tools:** Git, GitHub, AWS EC2, VS Code
 - **Specialized Libraries:** NetworkX (Graph Theory), Matplotlib, Requests
 
-## Projects
-
-### Advanced Python Class Assignments
-
-**1. Blackjack Game**
-- Command-line Blackjack implementation with complete game logic
-- Features user input handling, house play rules, and win/loss evaluation
-- Technologies: Python, Object-Oriented Programming, AWS EC2
-
-**2. COVID-19 Data Analysis Tool**
-- Comprehensive analysis tool for COVID-19 statistics across all US states and territories
-- Retrieves data via REST API, processes trends, and generates JSON reports
-- Technologies: Python, REST APIs, JSON, NumPy, Data Analysis
-
-**3. Cryptocurrency Arbitrage Detector**
-- Network-based arbitrage detection system using graph theory algorithms
-- Analyzes real-time cryptocurrency prices to identify profitable trading paths
-- Technologies: Python, NetworkX, Graph Theory, REST APIs, Financial Analysis
-
 ## Featured Achievement
 
 **Hack4Good Hackathon - Microsoft (2nd Place Winner)**
