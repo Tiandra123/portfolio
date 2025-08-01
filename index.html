@@ -81,12 +81,6 @@
             gap: 30px;
         }
 
-        .skills-experience-section {
-            display: grid;
-            grid-template-columns: 1fr;
-            gap: 30px;
-        }
-
         .section {
             background: white;
             border-radius: 15px;
@@ -243,6 +237,17 @@
             margin-left: 10px;
         }
 
+        .experience-subcategory {
+            color: #667eea;
+            margin-bottom: 20px;
+            margin-top: 30px;
+            font-size: 1.3em;
+        }
+
+        .experience-subcategory:first-child {
+            margin-top: 0;
+        }
+
         @media (max-width: 768px) {
             .main-content {
                 grid-template-columns: 1fr;
@@ -321,137 +326,145 @@
                     </div>
                 </div>
             </div>
+        </div>
 
-            <div class="section">
-                <h2>Experience</h2>
-                <div class="experience-item">
-                    <div class="item-header">
-                        <div>
-                            <div class="item-title">Senior Technical Support Engineer</div>
-                            <div class="item-company">Entrata</div>
-                        </div>
-                        <div class="item-date">Apr 2024 – Present</div>
-                    </div>
-                    <div class="item-details">
-                        <ul>
-                            <li>Develop backend database solutions and implement API integrations between multiple property management platforms</li>
-                            <li>Serve as technical intermediary for all stakeholders, performing advanced SQL and code-based troubleshooting</li>
-                            <li>Bridge gap between clients and development team by implementing direct fixes or creating detailed JIRA tickets</li>
-                        </ul>
-                    </div>
+        <div class="section full-width">
+            <h2>Technical Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h3>Advanced Skills</h3>
+                    <ul class="skill-list">
+                        <li>Application Development</li>
+                        <li>Web Production and Application</li>
+                        <li>Multimedia Technology</li>
+                    </ul>
                 </div>
-                <div class="experience-item">
-                    <div class="item-header">
-                        <div>
-                            <div class="item-title">Graduate Teaching Fellow</div>
-                            <div class="item-company">Utah State University</div>
-                        </div>
-                        <div class="item-date">Jan 2025 – May 2025</div>
-                    </div>
-                    <div class="item-details">
-                        <ul>
-                            <li>Support professor with course delivery, student assessment, and classroom management</li>
-                            <li>Facilitate student learning through one-on-one coaching and group discussions</li>
-                            <li>Maintain records and assist with grading and feedback processes</li>
-                        </ul>
-                    </div>
+                <div class="skill-category">
+                    <h3>Intermediate Skills</h3>
+                    <ul class="skill-list">
+                        <li>SQL, PostgreSQL, MySQL</li>
+                        <li>Machine Learning</li>
+                        <li>Artificial Intelligence</li>
+                        <li>Python & Python Libraries</li>
+                        <li>Data Analysis</li>
+                        <li>Adobe Creative Cloud</li>
+                        <li>Cloud Services</li>
+                    </ul>
                 </div>
-                <div class="experience-item">
-                    <div class="item-header">
-                        <div>
-                            <div class="item-title">InterU – AI Conversation Simulation Platform</div>
-                            <div class="item-company">Research Project with Analytic Solution Center</div>
-                        </div>
-                        <div class="item-date">Aug 2024 – Present</div>
+                <div class="skill-category">
+                    <h3>Beginner Skills</h3>
+                    <ul class="skill-list">
+                        <li>HTML, CSS</li>
+                        <li>Deep Learning for AI</li>
+                        <li>Tableau</li>
+                        <li>Database Management</li>
+                        <li>GitHub</li>
+                        <li>Microsoft Office Suite</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="section full-width">
+            <h2>Experience</h2>
+            
+            <h3 class="experience-subcategory">Professional Experience</h3>
+            <div class="experience-item">
+                <div class="item-header">
+                    <div>
+                        <div class="item-title">Senior Technical Support Engineer</div>
+                        <div class="item-company">Entrata</div>
                     </div>
-                    <div class="item-details">
-                        <ul>
-                            <li>Lead front-end development for conversation simulation platform</li>
-                            <li>Ensure seamless user flow and proper connectivity between front-end interfaces for the back-end system connections</li>
-                            <li>Implement technical solutions to facilitate realistic AI-powered communication practice environments</li>
-                        </ul>
+                    <div class="item-date">Apr 2024 – Present</div>
+                </div>
+                <div class="item-details">
+                    <ul>
+                        <li>Develop backend database solutions and implement API integrations between multiple property management platforms</li>
+                        <li>Serve as technical intermediary for all stakeholders, performing advanced SQL and code-based troubleshooting</li>
+                        <li>Bridge gap between clients and development team by implementing direct fixes or creating detailed JIRA tickets</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="experience-item">
+                <div class="item-header">
+                    <div>
+                        <div class="item-title">Graduate Teaching Fellow</div>
+                        <div class="item-company">Utah State University</div>
                     </div>
+                    <div class="item-date">Jan 2025 – May 2025</div>
+                </div>
+                <div class="item-details">
+                    <ul>
+                        <li>Support professor with course delivery, student assessment, and classroom management</li>
+                        <li>Facilitate student learning through one-on-one coaching and group discussions</li>
+                        <li>Maintain records and assist with grading and feedback processes</li>
+                    </ul>
                 </div>
             </div>
 
-            <div class="section full-width">
-                <h2>Technical Skills</h2>
-                <div class="skills-grid">
-                    <div class="skill-category">
-                        <h3>Advanced Skills</h3>
-                        <ul class="skill-list">
-                            <li>Application Development</li>
-                            <li>Web Production and Application</li>
-                            <li>Multimedia Technology</li>
-                        </ul>
+            <h3 class="experience-subcategory">Projects & Competitions</h3>
+            <div class="experience-item">
+                <div class="item-header">
+                    <div>
+                        <div class="item-title">Hack4Good Hackathon - Microsoft (2nd Place Winner)</div>
+                        <div class="item-company">Bellevue, WA</div>
                     </div>
-                    <div class="skill-category">
-                        <h3>Intermediate Skills</h3>
-                        <ul class="skill-list">
-                            <li>SQL, PostgreSQL, MySQL</li>
-                            <li>Machine Learning</li>
-                            <li>Artificial Intelligence</li>
-                            <li>Python & Python Libraries</li>
-                            <li>Data Analysis</li>
-                            <li>Adobe Creative Cloud</li>
-                            <li>Cloud Services</li>
-                        </ul>
-                    </div>
-                    <div class="skill-category">
-                        <h3>Beginner Skills</h3>
-                        <ul class="skill-list">
-                            <li>HTML, CSS</li>
-                            <li>Deep Learning for AI</li>
-                            <li>Tableau</li>
-                            <li>Database Management</li>
-                            <li>GitHub</li>
-                            <li>Microsoft Office Suite</li>
-                        </ul>
-                    </div>
+                    <div class="item-date">Spring 2025</div>
+                </div>
+                <div class="item-details">
+                    <ul>
+                        <li>Won second place among 10+ competing teams by developing a RAG pipeline for the Elizabeth Glaser Pediatric AIDS Foundation</li>
+                        <li>Built system to ingest, clean, organize, and store billions of data instances for access through a chatbot interface</li>
+                        <li>Created solution enabling field workers across 16 African countries to retrieve critical statistics for HIV elimination</li>
+                    </ul>
                 </div>
             </div>
-
-            <div class="section full-width">
-                <h2>GitHub Projects</h2>
-                <div class="projects-grid">
-                    <div class="project-item">
-                        <div class="project-title"><a href="advanced-python-assignments/" style="color: #2c3e50; text-decoration: none;">Blackjack Game</a></div>
-                        <div class="project-details">
-                            <strong>Technologies:</strong> Python, Object-Oriented Programming, AWS EC2, VS Code<br>
-                            A command-line Blackjack game with user input handling, card dealing logic, and basic house play rules (house hits when score ≤ 17). Features include bust detection, score tracking, game restart functionality, and win/loss evaluation. Developed using provided DeckOfCards class and tested on AWS EC2 instance.
-                        </div>
+            <div class="experience-item">
+                <div class="item-header">
+                    <div>
+                        <div class="item-title">InterU – AI Conversation Simulation Platform</div>
+                        <div class="item-company">Research Project with Analytic Solution Center</div>
                     </div>
-                    <div class="project-item">
-                        <div class="project-title"><a href="advanced-python-assignments/" style="color: #2c3e50; text-decoration: none;">COVID-19 Data Analysis Tool</a></div>
-                        <div class="project-details">
-                            <strong>Technologies:</strong> Python, REST APIs, JSON, NumPy, Data Analysis<br>
-                            A comprehensive data analysis tool that retrieves COVID-19 statistics from a REST API for all US states and territories. Processes and analyzes daily case data to identify trends, peak dates, and monthly/yearly patterns. Outputs formatted analysis reports and saves processed data as JSON files for each state.
-                        </div>
-                    </div>
-                    <div class="project-item">
-                        <div class="project-title"><a href="advanced-python-assignments/" style="color: #2c3e50; text-decoration: none;">Cryptocurrency Arbitrage Detector</a></div>
-                        <div class="project-details">
-                            <strong>Technologies:</strong> Python, NetworkX, Graph Theory, REST APIs, Financial Analysis<br>
-                            A network-based arbitrage detection system for cryptocurrency markets using graph theory algorithms. Retrieves real-time price data from CoinGecko API, constructs weighted directed graphs, and identifies profitable trading paths between different cryptocurrencies. Calculates potential gains/losses through multi-step currency exchanges.
-                        </div>
-                    </div>
-                    <div class="project-item">
-                        <div class="project-title">More Projects Coming Soon!</div>
-                        <div class="project-details">
-                            Additional projects will be added as they are completed throughout my MIS program. Check back soon!
-                        </div>
-                    </div>
+                    <div class="item-date">Aug 2024 – Present</div>
+                </div>
+                <div class="item-details">
+                    <ul>
+                        <li>Lead front-end development for conversation simulation platform</li>
+                        <li>Ensure seamless user flow and proper connectivity between front-end interfaces for the back-end system connections</li>
+                        <li>Implement technical solutions to facilitate realistic AI-powered communication practice environments</li>
+                    </ul>
                 </div>
             </div>
+        </div>
 
-            <div class="section full-width">
-                <h2>Featured Achievement</h2>
-                <div class="projects-grid">
-                    <div class="project-item">
-                        <div class="project-title">Hack4Good Hackathon - Microsoft (2nd Place Winner)</div>
-                        <div class="project-details">
-                            Won second place among 10+ competing teams by developing a RAG pipeline for the Elizabeth Glaser Pediatric AIDS Foundation. Built system to ingest, clean, organize, and store billions of data instances for access through a chatbot interface that also can create data visualization. Created solution enabling field workers across 16 African countries to retrieve critical statistics for HIV elimination.
-                        </div>
+        <div class="section full-width">
+            <h2>GitHub Projects</h2>
+            <div class="projects-grid">
+                <div class="project-item">
+                    <div class="project-title"><a href="advanced-python-assignments/" style="color: #2c3e50; text-decoration: none;">Blackjack Game</a></div>
+                    <div class="project-details">
+                        <strong>Technologies:</strong> Python, Object-Oriented Programming, AWS EC2, VS Code<br>
+                        A command-line Blackjack game with user input handling, card dealing logic, and basic house play rules (house hits when score ≤ 17). Features include bust detection, score tracking, game restart functionality, and win/loss evaluation. Developed using provided DeckOfCards class and tested on AWS EC2 instance.
+                    </div>
+                </div>
+                <div class="project-item">
+                    <div class="project-title"><a href="advanced-python-assignments/" style="color: #2c3e50; text-decoration: none;">COVID-19 Data Analysis Tool</a></div>
+                    <div class="project-details">
+                        <strong>Technologies:</strong> Python, REST APIs, JSON, NumPy, Data Analysis<br>
+                        A comprehensive data analysis tool that retrieves COVID-19 statistics from a REST API for all US states and territories. Processes and analyzes daily case data to identify trends, peak dates, and monthly/yearly patterns. Outputs formatted analysis reports and saves processed data as JSON files for each state.
+                    </div>
+                </div>
+                <div class="project-item">
+                    <div class="project-title"><a href="advanced-python-assignments/" style="color: #2c3e50; text-decoration: none;">Cryptocurrency Arbitrage Detector</a></div>
+                    <div class="project-details">
+                        <strong>Technologies:</strong> Python, NetworkX, Graph Theory, REST APIs, Financial Analysis<br>
+                        A network-based arbitrage detection system for cryptocurrency markets using graph theory algorithms. Retrieves real-time price data from CoinGecko API, constructs weighted directed graphs, and identifies profitable trading paths between different cryptocurrencies. Calculates potential gains/losses through multi-step currency exchanges.
+                    </div>
+                </div>
+                <div class="project-item">
+                    <div class="project-title">More Projects Coming Soon!</div>
+                    <div class="project-details">
+                        Additional projects will be added as they are completed throughout my MIS program. Check back soon!
                     </div>
                 </div>
             </div>
