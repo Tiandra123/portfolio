@@ -1,6 +1,6 @@
 # Advanced Python Class Assignments
 
-This folder contains projects completed for my Advanced Python course as part of my MIS Master's program at Utah State University. All projects were developed and tested on AWS EC2 instances using VS Code.
+This folder contains projects completed for my Advanced Python course as part of my MIS Master's program at USU. All projects were developed and tested on a AWS EC2 instance using VS Code.
 
 ## Projects Overview
 
@@ -24,7 +24,7 @@ A command-line Blackjack implementation featuring complete game logic and user i
 **Note:** This project uses a `DeckOfCards.py` class provided by the instructor.
 
 **How to Run:**
-1. Ensure you have the `DeckOfCards.py` file in the same directory
+1. Ensure you have the `DeckOfCards.py` file in the same directory 
 2. Run: `python blackjack.py`
 
 ---
