@@ -1,118 +1,20 @@
 # Advanced Python Class Assignments
 
-This folder contains projects I completed for my Python courses as part of my MIS Master's program at USU. All projects were developed and tested on AWS EC2 instances using VS Code, or Cloud9.
+This folder contains projects I completed for my Python courses as part of my coursework for my Master's degree in Management Information Systems at the Jon M. Huntsman School of Business, Utah State University (USU).
 
 ## Projects Overview
 
 ### 1. Cryptocurrency Arbitrage Detector (`crypto_arbitrage.py`)
-
-A network-based arbitrage detection system for cryptocurrency markets using graph theory algorithms.
-
-**Key Features:**
-- Real-time price data retrieval from CoinGecko API
-- Weighted directed graph construction
-- Graph traversal algorithms to find trading paths
-- Arbitrage opportunity identification
-- Forward and reverse path analysis
-- Profit/loss calculations for trading opportunities
-
-**Supported Cryptocurrencies:**
-- Bitcoin (BTC), Ethereum (ETH), Litecoin (LTC)
-- Ripple (XRP), Cardano (ADA), Bitcoin Cash (BCH), EOS
-
-**Technologies Used:**
-- Python
-- NetworkX for graph theory operations
-- REST APIs for real-time data
-- Mathematical analysis for arbitrage detection
-
-**How to Run:**
-1. Install required libraries: `pip install networkx requests matplotlib`
-2. Run: `python crypto_arbitrage.py`
-3. View arbitrage opportunities in the console output
-
----
+A network-based arbitrage detection system for cryptocurrency markets using graph theory algorithms. Built real-time price data retrieval and graph traversal algorithms to identify trading opportunities across multiple cryptocurrencies.
 
 ### 2. COVID-19 Data Analysis Tool (`covid_analysis.py`)
-
-A comprehensive data analysis tool that retrieves and processes COVID-19 statistics for all US states and territories.
-
-**Key Features:**
-- REST API integration with COVID Tracking Project
-- Data processing for all 50 states + territories
-- Statistical analysis (averages, peaks, trends)
-- Date formatting and data validation
-- Monthly/yearly trend analysis
-- JSON output file generation per state
-- Handles missing data and edge cases
-
-**Technologies Used:**
-- Python
-- REST APIs & JSON processing
-- NumPy for statistical calculations
-- Data analysis and datetime manipulation
-
-**How to Run:**
-1. Install required libraries: `pip install requests numpy`
-2. Run: `python covid_analysis.py`
-3. Output files will be generated as `[state].json` for each state
-
----
+A comprehensive data analysis tool that retrieves and processes COVID-19 statistics for all US states and territories. Integrated with REST APIs to perform statistical analysis and generate JSON output files for each state.
 
 ### 3. Blackjack Game (`blackjack.py`)
+A command-line Blackjack implementation featuring complete game logic, user interaction, card dealing, score tracking, and house play rules with bust detection and win/loss evaluation.
 
-A command-line Blackjack implementation featuring complete game logic and user interaction.
-
-**Key Features:**
-- User input handling for hit/stay decisions
-- Card dealing and score tracking
-- House play rules (house hits when score ≤ 17)
-- Bust detection and win/loss evaluation
-- Game restart functionality
-- Five-card Charlie rule implementation
-
-**Technologies Used:**
-- Python
-- Object-Oriented Programming
-- AWS EC2 for development environment
-
-**Note:** This project uses a `DeckOfCards.py` class provided by the instructor.
-
-**How to Run:**
-1. Ensure you have the `DeckOfCards.py` file in the same directory
-2. Run: `python blackjack.py`
-
----
-
-### 4. Energy Efficiency Analysis Tool (`energy_analysis.py`) - My First Big Python Project!
-
-A comprehensive energy analysis system that examines electricity generation efficiency across Western US states.
-
-**Key Features:**
-- REST API integration with U.S. Energy Information Administration (EIA.gov)
-- Multi-state data processing (UT, MT, ID, WY, CO, CA, AZ, NV, OR, WA)
-- Analysis of multiple fuel types (coal, petroleum, natural gas, hydroelectric, wind, solar)
-- Efficiency calculations (BTU input vs electricity output)
-- Automated data updates with date validation
-- Null value handling and data cleaning
-- JSON export of processed results
-- historical data analysis over multiple years
-
-**Technologies Used:**
-- Python
-- REST APIs & JSON processing
-- Data analysis and mathematical calculations
-- File I/O operations
-
-**Note:** You'll need to obtain your own API key from EIA.gov to run this project.
-
-**How to Run:**
-1. Get API key from https://www.eia.gov/opendata/
-2. Replace `[InsertYourOwnAPIKeyHere]` with your key
-3. Install required libraries: `pip install requests`
-4. Run: `python energy_analysis.py`
-
----
+### 4. Energy Efficiency Analysis Tool (`energy_analysis.py`)
+My first big Python project! A comprehensive energy analysis system examining electricity generation efficiency across Western US states. Integrated with U.S. Energy Information Administration API to analyze multiple fuel types and calculate efficiency metrics.
 
 ## Development Environment
 
@@ -122,17 +24,11 @@ All projects were developed using:
 - **Python Version:** 3.x
 - **Testing:** Manual testing and validation
 
-## Learning Outcomes
+## Connect & Collaborate
 
-These projects demonstrate proficiency in:
-- Object-oriented programming principles
-- API integration and JSON data handling
-- Data analysis and statistical calculations
-- Graph theory and network algorithms
-- Error handling and edge case management
-- Code organization and documentation
-- Energy sector data analysis
-- Financial market analysis
+Interested in discussing these projects or potential collaborations? Let's connect!
+- **LinkedIn:** [linkedin.com/in/TiandraTaylor36](https://linkedin.com/in/TiandraTaylor36)
+- **Portfolio Website:** [tiandra123.github.io/portfolio](https://tiandra123.github.io/portfolio)
 
 ---
 
