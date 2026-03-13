@@ -1,19 +1,18 @@
 # Portfolio
 
-Welcome to my portfolio repository! This showcases my projects and technical skills as I pursue my MIS Master's degree at Utah State University.
+Welcome to my portfolio repository! This showcases my projects and technical skills as a recent M.S. Management Information Systems graduate (4.0 GPA) from Utah State University.
 
 ## About Me
 
-I'm currently a Senior Technical Support Engineer at Entrata while completing my Master's in Management Information Systems. My coursework includes machine learning, deep learning, database management, coding, and upcoming studies in cloud computing and data pipelines.
+I'm a Senior Technical Support Engineer at Entrata where I troubleshoot ETL pipelines and analyze data across 6+ property management platforms. I recently completed my Master's in MIS and am actively building toward Data Engineer and Analytics Engineer roles.
 
 ## Technical Skills
 
-- **Languages:** Python, SQL, HTML, CSS
-- **Data & Analytics:** Machine Learning, Deep Learning, Data Analysis, NumPy
-- **APIs & Integration:** REST APIs, JSON processing, API integrations
+- **Languages:** Python (pandas, NumPy, scikit-learn), SQL, HTML, CSS
+- **Data Engineering:** ETL Pipelines, API Integrations, JSON Processing, Data Transformation, Parquet
+- **Cloud & Tools:** AWS (S3, Lambda, EC2, IAM, RDS), Git/GitHub, Domo, Tableau
 - **Databases:** PostgreSQL, MySQL, Database Management
-- **Development Tools:** Git, GitHub, AWS EC2, VS Code
-- **Specialized Libraries:** NetworkX (Graph Theory), Matplotlib, Requests
+- **Data & Analytics:** Machine Learning, Deep Learning, Data Analysis
 
 ## Connect With Me
 
