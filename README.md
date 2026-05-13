@@ -4,12 +4,12 @@ Welcome to my portfolio repository! This showcases my projects and technical ski
 
 ## About Me
 
-I'm a Senior Technical Support Engineer at Entrata where I troubleshoot ETL pipelines and analyze data across 6+ property management platforms. I recently completed my Master's in MIS and am actively building toward Data Engineer and Analytics Engineer roles.
+I'm a a Lead over one of the T2 (Senior Technical Support Engineer) teams at Entrata. I troubleshoot ETL pipelines, analyze data across 6+ property management platforms, and build custom queries / reports for stakeholders. I recently completed my Master's in MIS and am actively building toward Data Engineer and Analytics Engineer roles.
 
 ## Technical Skills
 
 - **Languages:** Python (pandas, NumPy, scikit-learn), SQL, HTML, CSS
-- **Data Engineering:** ETL Pipelines, API Integrations, JSON Processing, Data Transformation, Parquet
+- **Data Engineering:** ETL Pipelines, API Integrations, JSON Processing, Data Transformation, Parquet files
 - **Cloud & Tools:** AWS (S3, Lambda, EC2, IAM, RDS), Git/GitHub, Domo, Tableau
 - **Databases:** PostgreSQL, MySQL, Database Management
 - **Data & Analytics:** Machine Learning, Deep Learning, Data Analysis
