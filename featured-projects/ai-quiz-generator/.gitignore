@@ -1,6 +1,3 @@
-# Contents for your .gitignore file
-# (rename this to .gitignore in your repo)
-
 .env
 __pycache__/
 *.pyc
