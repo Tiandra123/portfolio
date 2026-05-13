@@ -10,7 +10,9 @@ The app is split into three modules:
 - A generator that calls the Claude API and validates the response structure
 - A grader that scores answers and returns per-question detail
 - A Streamlit frontend that ties it together with session state management
+
 For incorrect answers, the app makes a second API call to generate a plain-language explanation of why the correct answer is right.
+
 
 **Key features:**
 - Generates a validated 5-question quiz on any topic using the Claude API
