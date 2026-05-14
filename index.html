@@ -107,6 +107,7 @@
         .job:last-child, .education:last-child {
             border-bottom: none;
             margin-bottom: 0;
+            padding-bottom: 0;
         }
 
         .job-title, .degree {
@@ -126,6 +127,16 @@
             float: right;
         }
 
+        .job ul, .education ul {
+            margin-top: 8px;
+            padding-left: 18px;
+        }
+
+        .job ul li, .education ul li {
+            padding: 3px 0;
+            color: #555;
+        }
+
         .skills {
             margin-bottom: 20px;
             background: #f8f9fa;
@@ -134,9 +145,13 @@
             border-left: 4px solid #667eea;
         }
 
+        .skills:last-child {
+            margin-bottom: 0;
+        }
+
         .skills h3 {
             color: #2c3e50;
-            margin-bottom: 15px;
+            margin-bottom: 12px;
         }
 
         .skills ul {
@@ -144,7 +159,7 @@
         }
 
         .skills li {
-            padding: 5px 0;
+            padding: 4px 0;
             color: #555;
             position: relative;
             padding-left: 15px;
@@ -159,8 +174,9 @@
 
         .section-header {
             color: #667eea;
-            margin: 30px 0 20px 0;
-            font-size: 1.3em;
+            margin: 25px 0 15px 0;
+            font-size: 1.1em;
+            font-weight: 600;
         }
 
         .section-header:first-child {
@@ -175,9 +191,19 @@
             margin-bottom: 30px;
         }
 
+        .full-width h2 {
+            color: #2c3e50;
+            font-size: 1.8em;
+            margin-bottom: 20px;
+            border-bottom: 3px solid #667eea;
+            padding-bottom: 10px;
+            display: inline-block;
+        }
+
         .projects {
             display: grid;
             gap: 20px;
+            margin-top: 10px;
         }
 
         .project {
@@ -187,172 +213,298 @@
             border-left: 4px solid #764ba2;
         }
 
+        .project.featured {
+            border-left: 4px solid #667eea;
+            background: #f0f2ff;
+        }
+
         .project-title {
             color: #2c3e50;
-            font-size: 1.2em;
+            font-size: 1.1em;
             font-weight: 600;
+            margin-bottom: 8px;
+        }
+
+        .project-title a {
+            color: #2c3e50;
+            text-decoration: none;
+        }
+
+        .project-title a:hover {
+            color: #667eea;
+        }
+
+        .project-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 6px;
             margin-bottom: 10px;
+        }
+
+        .tag {
+            background: #667eea;
+            color: white;
+            padding: 2px 10px;
+            border-radius: 12px;
+            font-size: 0.78em;
+        }
+
+        .projects-subheader {
+            color: #7f8c8d;
+            font-size: 0.9em;
+            margin: 25px 0 8px 0;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+        }
+
+        .projects-subheader:first-of-type {
+            margin-top: 20px;
         }
 
         @media (max-width: 768px) {
             .row {
                 flex-direction: column;
             }
-            
             .box {
                 width: 100%;
             }
-            
             .contact-links {
                 flex-direction: column;
                 align-items: center;
+            }
+            .date {
+                float: none;
+                display: block;
             }
         }
     </style>
 </head>
 <body>
     <div class="container">
+
+        <!-- HEADER -->
         <header>
             <h1>Tiandra Taylor</h1>
-            <p class="subtitle">MIS Master's Student & Senior Technical Support Engineer</p>
+            <p class="subtitle">Data Engineer · Analytics Engineer · M.S. MIS Graduate (4.0 GPA)</p>
             <div class="contact-links">
-                <a href="https://linkedin.com/in/tiandrataylor36" target="_blank">💼 LinkedIn</a>
+                <a href="https://linkedin.com/in/TiandraTaylor36" target="_blank">💼 LinkedIn</a>
                 <a href="https://github.com/Tiandra123" target="_blank">💻 GitHub</a>
             </div>
         </header>
 
+        <!-- ABOUT + EDUCATION -->
         <div class="row">
             <div class="box">
                 <h2>About Me</h2>
-                <p>I'm a Master's student at Utah State University studying Management Information Systems while working full-time as a Senior Technical Support Engineer at Entrata. I love diving into data to uncover insights that help solve real problems - there's something satisfying about finding patterns that others might miss. I'm constantly learning new technologies and enjoy the challenge of tackling complex problems. Outside of work and school, I spend my time skiing, paddleboarding, and traveling to new places whenever I get the chance.</p>
+                <p>I'm a data professional with hands-on experience building ETL pipelines, analyzing large-scale datasets, and developing AI-powered applications. I recently completed my Master of Management Information Systems (4.0 GPA) at Utah State University while working full-time as a Senior Technical Support Engineer at Entrata — where I troubleshoot and optimize data sync pipelines processing thousands of daily transactions across 6+ property management platforms.</p>
+                <br>
+                <p>I'm actively looking for Data Engineer, Analytics Engineer, and Data Analyst roles where I can keep building. Outside of work I'm usually skiing, paddleboarding, or finding somewhere new to explore.</p>
             </div>
 
             <div class="box">
                 <h2>Education</h2>
                 <div class="education">
+                    <span class="date">Dec 2025</span>
                     <div class="degree">Master of Management Information Systems</div>
-                    <div class="school">Utah State University, Jon M. Huntsman School of Business</div>
-                    <div class="date">Present</div>
-                    <p><span class="gpa">GPA: 4.0</span>  while working part time / full time<br>
-                    • Analytic Solution Center Member, Association for Information Systems Member</p>
+                    <div class="school">Utah State University, Jon M. Huntsman School of Business · Logan, UT</div>
+                    <ul>
+                        <li><span class="gpa">GPA: 4.0</span> &nbsp;while working part time / full time</li>
+                        <li>Analytic Solution Center Member</li>
+                        <li>Association for Information Systems Member</li>
+                    </ul>
                 </div>
                 <div class="education">
-                    <div class="degree">Bachelor of Science in Human Experience Design and Interaction</div>
-                    <div class="school">Utah State University, Emma Eccles Jones College</div>
-                    <div class="date">Dec 2023</div>
-                    <p><span class="gpa">GPA: 3.89</span>  while working full time<br>
-                    • Undergraduate Teaching Fellow Award, Department of Instructional Technology & Learning Sciences</p>
+                    <span class="date">Dec 2023</span>
+                    <div class="degree">B.S. in Human Experience Design and Interaction</div>
+                    <div class="school">Utah State University, Emma Eccles Jones College of Education and Human Services · Logan, UT</div>
+                    <ul>
+                        <li><span class="gpa">GPA: 3.89</span> &nbsp;while working full time</li>
+                        <li>Undergraduate Teaching Fellow Award</li>
+                        <li>Department of Instructional Technology & Learning Sciences</li>
+                    </ul>
                 </div>
             </div>
         </div>
 
+        <!-- SKILLS + EXPERIENCE -->
         <div class="row">
             <div class="box">
                 <h2>Technical Skills</h2>
                 <div class="skills">
-                    <h3>Advanced Skills</h3>
+                    <h3>Programming Languages</h3>
                     <ul>
-                        <li>Application Development</li>
-                        <li>Web Production and Application</li>
-                        <li>Multimedia Technology</li>
+                        <li>Python (pandas, NumPy, scikit-learn)</li>
+                        <li>SQL (PostgreSQL, MySQL)</li>
                     </ul>
                 </div>
                 <div class="skills">
-                    <h3>Intermediate Skills</h3>
+                    <h3>Data Engineering</h3>
                     <ul>
-                        <li>SQL, PostgreSQL, MySQL</li>
-                        <li>Machine Learning</li>
-                        <li>Artificial Intelligence</li>
-                        <li>Python & Python Libraries</li>
-                        <li>Data Analysis</li>
-                        <li>Adobe Creative Cloud</li>
-                        <li>Cloud Services</li>
+                        <li>ETL pipelines & data transformation</li>
+                        <li>API integrations</li>
+                        <li>Data quality analysis</li>
+                        <li>Database optimization</li>
                     </ul>
                 </div>
                 <div class="skills">
-                    <h3>Beginner Skills</h3>
+                    <h3>Cloud & Tools</h3>
                     <ul>
-                        <li>HTML, CSS</li>
-                        <li>Deep Learning for AI</li>
-                        <li>Tableau</li>
-                        <li>Database Management</li>
-                        <li>GitHub</li>
-                        <li>Microsoft Office Suite</li>
+                        <li>AWS (S3, Lambda, EC2, RDS, CloudWatch)</li>
+                        <li>Git / GitHub</li>
+                        <li>Domo · Tableau</li>
+                        <li>JIRA · Agile/Scrum</li>
+                    </ul>
+                </div>
+                <div class="skills">
+                    <h3>Data Analysis</h3>
+                    <ul>
+                        <li>Machine learning (regression, classification)</li>
+                        <li>Statistical analysis</li>
+                        <li>Data visualization</li>
+                        <li>Root cause analysis</li>
                     </ul>
                 </div>
             </div>
 
             <div class="box">
                 <h2>Experience</h2>
-                
-                <h3 class="section-header">Professional Experience</h3>
+
+                <div class="section-header">Professional Experience</div>
+
                 <div class="job">
-                    <div class="job-title">Senior Technical Support Engineer</div>
-                    <div class="company">Entrata</div>
-                    <div class="date">Apr 2024 – Present</div>
-                    <br>
+                    <span class="date">Mar 2026 – Present</span>
+                    <div class="job-title">Lead Senior Technical Support Engineer</div>
+                    <div class="company">Entrata · Logan, UT</div>
                     <ul>
-                        <li>Develop backend database solutions and implement API integrations between multiple property management platforms</li>
-                        <li>Serve as technical intermediary for all stakeholders, performing advanced SQL and code-based troubleshooting</li>
-                        <li>Bridge gap between clients and development team by implementing direct fixes or creating detailed JIRA tickets</li>
-                    </ul>
-                </div>
-                <div class="job">
-                    <div class="job-title">Graduate Teaching Fellow</div>
-                    <div class="company">Utah State University</div>
-                    <div class="date">Jan 2025 – May 2025</div>
-                    <br>
-                    <ul>
-                        <li>Support professor with course delivery, student assessment, and classroom management</li>
-                        <li>Facilitate student learning through one-on-one coaching and group discussions</li>
-                        <li>Maintain records and assist with grading and feedback processes</li>
+                        <li>Troubleshoot and optimize ETL pipelines synchronizing property management data across 6+ platforms (Yardi, RealPage, AppFolio, ResMan, MRI, etc.) processing thousands of daily transactions</li>
+                        <li>Perform data audits and create custom reports for stakeholders to support decision-making and client escalations</li>
+                        <li>Perform root cause analysis using SQL and Python to diagnose job failures, API integration issues, and data transformation errors; create detailed JIRA tickets with technical specifications for development team</li>
                     </ul>
                 </div>
 
-                <h3 class="section-header">Projects & Competitions</h3>
                 <div class="job">
-                    <div class="job-title">Hack4Good Hackathon - Microsoft (2nd Place Winner)</div>
-                    <div class="company">Bellevue, WA</div>
-                    <div class="date">Spring 2025</div>
-                    <br>
+                    <span class="date">Apr 2025 – Mar 2026</span>
+                    <div class="job-title">Senior Technical Support Engineer</div>
+                    <div class="company">Entrata · Logan, UT</div>
+                </div>
+
+                <div class="job">
+                    <span class="date">Apr 2024 – Apr 2025</span>
+                    <div class="job-title">Technical Support Engineer</div>
+                    <div class="company">Entrata · Logan, UT</div>
+                </div>
+
+                <div class="job">
+                    <span class="date">Jan 2025 – May 2025</span>
+                    <div class="job-title">Graduate Teaching Fellow</div>
+                    <div class="company">Utah State University · Logan, UT</div>
                     <ul>
-                        <li>Won second place among 10+ competing teams by developing a RAG pipeline for the Elizabeth Glaser Pediatric AIDS Foundation</li>
-                        <li>Built system to ingest, clean, organize, and store billions of data instances for access through a chatbot interface</li>
-                        <li>Created solution enabling field workers across 16 African countries to retrieve critical statistics for HIV elimination</li>
+                        <li>Supported professor with course delivery, classroom management, and student assessment</li>
+                        <li>Provided technical guidance to students on SQL and data analysis</li>
                     </ul>
                 </div>
+
+                <div class="section-header">Projects</div>
+
                 <div class="job">
-                    <div class="job-title">InterU – AI Conversation Simulation Platform</div>
-                    <div class="company">Research Project with Analytic Solution Center</div>
-                    <div class="date">Aug 2024 – Present</div>
-                    <br>
+                    <span class="date">Summer 2025</span>
+                    <div class="job-title">Property Management Sync Failure Analysis</div>
+                    <div class="company">Entrata · Logan, UT</div>
                     <ul>
-                        <li>Lead front-end development for conversation simulation platform</li>
-                        <li>Ensure seamless user flow and proper connectivity between front-end interfaces for the back-end system connections</li>
-                        <li>Implement technical solutions to facilitate realistic AI-powered communication practice environments</li>
+                        <li>Extracted and analyzed 200,000+ sync failure records via API across 6 property management systems; organized data hierarchically and stored as parquet files</li>
+                        <li>Built Python-based error categorization system using keyword matching, revealing 80% of failures stemmed from 5 key categories</li>
+                        <li>Created visualizations analyzing failure rates by platform, monthly trends, and job types; findings enabled data-driven prioritization of engineering fixes</li>
+                    </ul>
+                </div>
+
+                <div class="job">
+                    <span class="date">Fall 2025</span>
+                    <div class="job-title">NFL Betting Database & ETL Pipeline</div>
+                    <div class="company">Graduate Project · Logan, UT</div>
+                    <ul>
+                        <li>Designed and implemented ETL pipeline ingesting NFL game data (2015–2023) and 200,000+ betting records from CSV/SQL Server into normalized PostgreSQL database with 5 related tables</li>
+                        <li>Engineered business logic calculating betting outcomes and tiered commissions; created ERD and data dictionary documenting schema design</li>
+                        <li>Validated data integrity through test queries and regression analysis</li>
                     </ul>
                 </div>
             </div>
         </div>
 
+        <!-- GITHUB PROJECTS -->
         <div class="full-width">
-            <div class="full-width">
             <h2>GitHub Projects</h2>
+
+            <p class="projects-subheader">⭐ Featured Projects</p>
+            <div class="projects">
+                <div class="project featured">
+                    <div class="project-title"><a href="https://github.com/Tiandra123/portfolio/tree/main/featured-projects/pm-sync-analysis" target="_blank">PM Sync Failure Analysis</a></div>
+                    <div class="project-tags">
+                        <span class="tag">Python</span>
+                        <span class="tag">pandas</span>
+                        <span class="tag">Parquet</span>
+                        <span class="tag">API Integration</span>
+                        <span class="tag">Root Cause Analysis</span>
+                    </div>
+                    <p>Extracted and analyzed 200,000+ property management sync failure records via API. Built a Python keyword-matching categorization system revealing that 80% of failures stemmed from just 5 root causes — shifting the engineering team from reactive firefighting to data-driven prioritization.</p>
+                </div>
+                <div class="project featured">
+                    <div class="project-title"><a href="https://github.com/Tiandra123/portfolio/tree/main/featured-projects/sportsbook-betting-pipeline" target="_blank">NFL Sports Betting ETL Pipeline</a></div>
+                    <div class="project-tags">
+                        <span class="tag">Python</span>
+                        <span class="tag">PostgreSQL</span>
+                        <span class="tag">ETL</span>
+                        <span class="tag">SQL</span>
+                        <span class="tag">OLS Regression</span>
+                    </div>
+                    <p>Full ETL pipeline ingesting NFL game data (2015–2023) and 200,000+ betting records into a normalized PostgreSQL database. Includes exception table pattern, 7 analytical SQL queries, and OLS regression predicting customer net value.</p>
+                </div>
+                <div class="project featured">
+                    <div class="project-title"><a href="https://github.com/Tiandra123/portfolio/tree/main/featured-projects/ai-quiz-generator" target="_blank">AI Quiz Generator</a></div>
+                    <div class="project-tags">
+                        <span class="tag">Python</span>
+                        <span class="tag">Streamlit</span>
+                        <span class="tag">Claude API</span>
+                        <span class="tag">Error Handling</span>
+                    </div>
+                    <p>End-to-end AI-powered quiz app using the Claude API and Streamlit. Generates a validated 5-question multiple choice quiz on any topic, grades responses, and provides AI-generated explanations for missed answers.</p>
+                </div>
+            </div>
+
+            <p class="projects-subheader">📁 Coursework</p>
             <div class="projects">
                 <div class="project">
-                    <div class="project-title"><a href="https://github.com/Tiandra123/portfolio/tree/main/advanced-python-assignments" style="color: #2c3e50; text-decoration: none;">Advanced Python Projects</a></div>
-                    <p>Collection of Python projects from my MIS coursework including cryptocurrency arbitrage detection using graph theory, COVID-19 data analysis tool, command-line Blackjack game, and energy efficiency analysis across Western US states.</p>
+                    <div class="project-title"><a href="https://github.com/Tiandra123/portfolio/tree/main/coursework/data-pipeline-assignments" target="_blank">Data Pipeline Assignments</a></div>
+                    <div class="project-tags">
+                        <span class="tag">Python</span>
+                        <span class="tag">PostgreSQL</span>
+                        <span class="tag">ETL</span>
+                        <span class="tag">Sin Bin Pattern</span>
+                    </div>
+                    <p>Pipeline coursework covering CSV ingestion, exception/sin bin table patterns, data quality fixing, and multi-source SQL analysis.</p>
                 </div>
                 <div class="project">
-                    <div class="project-title"><a href="https://github.com/Tiandra123/portfolio/tree/main/MachineLearning" style="color: #2c3e50; text-decoration: none;">Machine Learning Portfolio</a></div>
-                    <p>Comprehensive ML projects including exploratory data analysis, KNN regression, linear regression with polynomial features, regularization techniques (Ridge, LASSO, Elastic Net), logistic regression, PCA, and random forest implementations.</p>
+                    <div class="project-title"><a href="https://github.com/Tiandra123/portfolio/tree/main/coursework/MachineLearning" target="_blank">Machine Learning Projects</a></div>
+                    <div class="project-tags">
+                        <span class="tag">Python</span>
+                        <span class="tag">scikit-learn</span>
+                        <span class="tag">pandas</span>
+                    </div>
+                    <p>ML coursework including KNN regression, linear regression, Ridge/LASSO/Elastic Net regularization, logistic regression, PCA, and random forest implementations.</p>
                 </div>
                 <div class="project">
-                    <div class="project-title">More Projects Coming Soon!</div>
-                    <p>Additional projects will be added as they are completed throughout my MIS program. Check back soon for database management, cloud computing, and data pipeline projects!</p>
+                    <div class="project-title"><a href="https://github.com/Tiandra123/portfolio/tree/main/coursework/advanced-python-assignments" target="_blank">Advanced Python Projects</a></div>
+                    <div class="project-tags">
+                        <span class="tag">Python</span>
+                        <span class="tag">REST APIs</span>
+                        <span class="tag">Graph Theory</span>
+                        <span class="tag">AWS EC2</span>
+                    </div>
+                    <p>Python projects including crypto arbitrage detection using graph theory, COVID-19 API data analysis, and energy efficiency analysis using the EIA API.</p>
                 </div>
             </div>
         </div>
+
     </div>
 </body>
 </html>
